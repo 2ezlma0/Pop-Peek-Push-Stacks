@@ -1,0 +1,15 @@
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.exe
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.deps.json
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.runtimeconfig.json
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.runtimeconfig.dev.json
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.dll
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\bin\Debug\netcoreapp3.1\PopPeekPush.pdb
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.csprojAssemblyReference.cache
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.Form1.resources
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.csproj.GenerateResource.cache
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.AssemblyInfoInputs.cache
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.AssemblyInfo.cs
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.csproj.CoreCompileInputs.cache
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.dll
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.pdb
+\\eastnorfolk.ac.uk\Students\Home\start2021\59572\VSC\projects\CBlock\PopPeekPush\PopPeekPush\obj\Debug\netcoreapp3.1\PopPeekPush.genruntimeconfig.cache
