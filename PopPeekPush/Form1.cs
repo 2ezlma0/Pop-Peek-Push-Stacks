@@ -7,21 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PopPeekPush
 {
     public partial class Form1 : Form
     {
         public int[] intArray = new int[10];
-        public int i, pointer;
-        public string arrayLabelString, outputString;
-
+        public int i, pointer, rnd;
+        public string arrayLabelString, arrayString, outputString, pathDoc, path;
 
         public Form1()
         {
             InitializeComponent();
             pointer = -1;
             ArrayLabelUpdate();
+            pathDoc = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         private void popButton_Click(object sender, EventArgs e)
@@ -37,6 +38,11 @@ namespace PopPeekPush
         private void pushButton_Click(object sender, EventArgs e)
         {
             PUSH();
+        }
+
+        private void exportButton_Click(object sender, EventArgs e)
+        {
+            EXPORT();
         }
 
         private void arrayLabel_Click(object sender, EventArgs e)
@@ -82,8 +88,16 @@ namespace PopPeekPush
             {
                 outputString = Convert.ToString(intArray[pointer]);
                 pointer--;
-                MessageBox.Show("Number outputted is: " + outputString + "\nPointer moved down");
-                ArrayLabelUpdate();
+                if (pointer == -1)
+                {
+                    pointer++;
+                    MessageBox.Show("Pointer cannot move down, number outputted is: " + outputString);
+                }
+                else
+                {
+                    MessageBox.Show("Number outputted is: " + outputString + "\nPointer moved down");
+                    ArrayLabelUpdate();
+                }
             }
             else
             {
@@ -119,6 +133,21 @@ namespace PopPeekPush
             {
                 MessageBox.Show("Stack is full!");
             }
+        }
+
+        private void EXPORT()
+        {
+            var rand = new Random();
+            rnd = rand.Next();
+            path = Path.Combine(pathDoc, "array" + rnd + ".txt");
+
+            for (i = 0; i < intArray.Length; i++)
+            {
+                arrayString += Convert.ToString(intArray[i]) + ", ";
+            }
+
+            File.WriteAllText(path, arrayString);
+            MessageBox.Show("Exported to " + path);
         }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "\\\\eastnorfolk.ac.uk\\Students\\Home\\start2021\\59572\\VSC\\projects\\CBlock\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj": {}
+    "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj": {}
   },
   "projects": {
-    "\\\\eastnorfolk.ac.uk\\Students\\Home\\start2021\\59572\\VSC\\projects\\CBlock\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj": {
+    "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\eastnorfolk.ac.uk\\Students\\Home\\start2021\\59572\\VSC\\projects\\CBlock\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
         "projectName": "PopPeekPush",
-        "projectPath": "\\\\eastnorfolk.ac.uk\\Students\\Home\\start2021\\59572\\VSC\\projects\\CBlock\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
-        "packagesPath": "C:\\Users\\59572\\.nuget\\packages\\",
-        "outputPath": "\\\\eastnorfolk.ac.uk\\Students\\Home\\start2021\\59572\\VSC\\projects\\CBlock\\PopPeekPush\\PopPeekPush\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\59572\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.211\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

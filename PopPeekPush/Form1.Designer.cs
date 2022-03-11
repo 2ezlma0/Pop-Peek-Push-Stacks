@@ -34,6 +34,7 @@ namespace PopPeekPush
             this.peekButton = new System.Windows.Forms.Button();
             this.pushButton = new System.Windows.Forms.Button();
             this.pushNum = new System.Windows.Forms.NumericUpDown();
+            this.exportButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pushNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,11 +100,22 @@ namespace PopPeekPush
             0,
             0});
             // 
+            // exportButton
+            // 
+            this.exportButton.Location = new System.Drawing.Point(328, 404);
+            this.exportButton.Name = "exportButton";
+            this.exportButton.Size = new System.Drawing.Size(143, 34);
+            this.exportButton.TabIndex = 5;
+            this.exportButton.Text = "EXPORT";
+            this.exportButton.UseVisualStyleBackColor = true;
+            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exportButton);
             this.Controls.Add(this.pushNum);
             this.Controls.Add(this.pushButton);
             this.Controls.Add(this.peekButton);
@@ -124,6 +136,7 @@ namespace PopPeekPush
         private System.Windows.Forms.Button peekButton;
         private System.Windows.Forms.Button pushButton;
         private System.Windows.Forms.NumericUpDown pushNum;
+        private System.Windows.Forms.Button exportButton;
     }
 }
 
