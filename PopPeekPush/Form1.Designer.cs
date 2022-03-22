@@ -35,6 +35,7 @@ namespace PopPeekPush
             this.pushButton = new System.Windows.Forms.Button();
             this.pushNum = new System.Windows.Forms.NumericUpDown();
             this.exportButton = new System.Windows.Forms.Button();
+            this.factorButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pushNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +83,7 @@ namespace PopPeekPush
             // 
             this.pushNum.Location = new System.Drawing.Point(578, 326);
             this.pushNum.Maximum = new decimal(new int[] {
-            1000,
+            2147483646,
             0,
             0,
             0});
@@ -110,11 +111,22 @@ namespace PopPeekPush
             this.exportButton.UseVisualStyleBackColor = true;
             this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
             // 
+            // factorButton
+            // 
+            this.factorButton.Location = new System.Drawing.Point(400, 326);
+            this.factorButton.Name = "factorButton";
+            this.factorButton.Size = new System.Drawing.Size(156, 23);
+            this.factorButton.TabIndex = 6;
+            this.factorButton.Text = "FIND FACTORS OF";
+            this.factorButton.UseVisualStyleBackColor = true;
+            this.factorButton.Click += new System.EventHandler(this.factorButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.factorButton);
             this.Controls.Add(this.exportButton);
             this.Controls.Add(this.pushNum);
             this.Controls.Add(this.pushButton);
@@ -137,6 +149,7 @@ namespace PopPeekPush
         private System.Windows.Forms.Button pushButton;
         private System.Windows.Forms.NumericUpDown pushNum;
         private System.Windows.Forms.Button exportButton;
+        private System.Windows.Forms.Button factorButton;
     }
 }
 

@@ -14,15 +14,15 @@ namespace PopPeekPush
     public partial class Form1 : Form
     {
         public int[] intArray = new int[10];
-        public int i, pointer, rnd;
-        public string arrayLabelString, arrayString, outputString, pathDoc, path;
+        public int a, i, pointer, rnd, factors;
+        public string arrayLabelString, arrayString, outputString, path, factorString;
+        public string pathDocArrayFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "arrayfolder");
 
         public Form1()
         {
             InitializeComponent();
             pointer = -1;
             ArrayLabelUpdate();
-            pathDoc = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         private void popButton_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace PopPeekPush
             EXPORT();
         }
 
+        private void factorButton_Click(object sender, EventArgs e)
+        {
+            FACTORCHECK();
+        }
+
         private void arrayLabel_Click(object sender, EventArgs e)
         {
 
@@ -61,7 +66,7 @@ namespace PopPeekPush
             for (i = 0; i < intArray.Length; i++)
             {
                 arrayLabelString = Convert.ToString(intArray[i]);
-                if(intArray[i] == 0)
+                if (intArray[i] == 0)
                 {
                     arrayLabelString = "null";
                 }
@@ -83,7 +88,7 @@ namespace PopPeekPush
         }
 
         private void POP()
-        {           
+        {
             if (pointer > -1)
             {
                 outputString = Convert.ToString(intArray[pointer]);
@@ -137,17 +142,67 @@ namespace PopPeekPush
 
         private void EXPORT()
         {
-            var rand = new Random();
-            rnd = rand.Next();
-            path = Path.Combine(pathDoc, "array" + rnd + ".txt");
+            for (i = 0; i < intArray.Length; i++)
+            {
+                arrayString += Convert.ToString(intArray[i]);
+                if(i != intArray.Length - 1)
+                {
+                    arrayString += ", ";
+                }
+            }
+
+            CreateFolderAndPath();
+            File.WriteAllText(path, arrayString);
+            MessageBox.Show("Exported to " + path);
+        }
+
+        private void FACTORCHECK()
+        {
+            int[] factorListArray = new int[10];
+            for(i = 0; i<factorListArray.Length; i++)   //reset array
+            {
+                factorListArray[i] = 0;
+            }
+
+            factorString = "";
+            factors = 0;    //reset factor count
+            a = 0;  //reset factor list array count
 
             for (i = 0; i < intArray.Length; i++)
             {
-                arrayString += Convert.ToString(intArray[i]) + ", ";
+                if(intArray[i] == 0)
+                {
+
+                }
+                else if (pushNum.Value % intArray[i] == 0)
+                {
+                    factorListArray[a] += intArray[i];
+                    factors++;
+                    a++;
+                }
+            }
+            
+            for (i = 0; i < factors; i++)
+            {
+                factorString += Convert.ToString(factorListArray[i]);
+                if (i + 1 != factors)
+                {
+                    factorString += ", ";
+                }
             }
 
-            File.WriteAllText(path, arrayString);
+            CreateFolderAndPath();
+            File.WriteAllText(path, factorString);
             MessageBox.Show("Exported to " + path);
+        }
+
+        private void CreateFolderAndPath()
+        {
+            Directory.CreateDirectory(pathDocArrayFolder);
+
+            var rand = new Random();
+            rnd = rand.Next();
+            path = Path.Combine(pathDocArrayFolder, "array" + rnd + ".txt");
         }
     }
 }

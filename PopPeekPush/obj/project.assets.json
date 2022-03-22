@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\VSC PROJECTS\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
       "projectName": "PopPeekPush",
-      "projectPath": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\VSC PROJECTS\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\PopPeekPush.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Downloads\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\VSC PROJECTS\\PopPeekPush-20220309T165051Z-001\\PopPeekPush\\PopPeekPush\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
