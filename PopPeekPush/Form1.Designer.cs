@@ -33,10 +33,14 @@ namespace PopPeekPush
             this.popButton = new System.Windows.Forms.Button();
             this.peekButton = new System.Windows.Forms.Button();
             this.pushButton = new System.Windows.Forms.Button();
-            this.pushNum = new System.Windows.Forms.NumericUpDown();
+            this.numInput = new System.Windows.Forms.NumericUpDown();
             this.exportButton = new System.Windows.Forms.Button();
             this.factorButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pushNum)).BeginInit();
+            this.randomButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numInput)).BeginInit();
             this.SuspendLayout();
             // 
             // arrayLabel
@@ -79,23 +83,23 @@ namespace PopPeekPush
             this.pushButton.UseVisualStyleBackColor = true;
             this.pushButton.Click += new System.EventHandler(this.pushButton_Click);
             // 
-            // pushNum
+            // numInput
             // 
-            this.pushNum.Location = new System.Drawing.Point(578, 326);
-            this.pushNum.Maximum = new decimal(new int[] {
+            this.numInput.Location = new System.Drawing.Point(578, 326);
+            this.numInput.Maximum = new decimal(new int[] {
             2147483646,
             0,
             0,
             0});
-            this.pushNum.Minimum = new decimal(new int[] {
+            this.numInput.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.pushNum.Name = "pushNum";
-            this.pushNum.Size = new System.Drawing.Size(136, 23);
-            this.pushNum.TabIndex = 4;
-            this.pushNum.Value = new decimal(new int[] {
+            this.numInput.Name = "numInput";
+            this.numInput.Size = new System.Drawing.Size(136, 23);
+            this.numInput.TabIndex = 4;
+            this.numInput.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -121,21 +125,63 @@ namespace PopPeekPush
             this.factorButton.UseVisualStyleBackColor = true;
             this.factorButton.Click += new System.EventHandler(this.factorButton_Click);
             // 
+            // randomButton
+            // 
+            this.randomButton.Location = new System.Drawing.Point(91, 345);
+            this.randomButton.Name = "randomButton";
+            this.randomButton.Size = new System.Drawing.Size(95, 41);
+            this.randomButton.TabIndex = 7;
+            this.randomButton.Text = "RANDOMISE ARRAY";
+            this.randomButton.UseVisualStyleBackColor = true;
+            this.randomButton.Click += new System.EventHandler(this.randomButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(578, 356);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "(Number in here determines";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(578, 371);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = " amount of max digits used in";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(578, 386);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 15);
+            this.label3.TabIndex = 10;
+            this.label3.Text = " randomised array)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.randomButton);
             this.Controls.Add(this.factorButton);
             this.Controls.Add(this.exportButton);
-            this.Controls.Add(this.pushNum);
+            this.Controls.Add(this.numInput);
             this.Controls.Add(this.pushButton);
             this.Controls.Add(this.peekButton);
             this.Controls.Add(this.popButton);
             this.Controls.Add(this.arrayLabel);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pushNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,9 +193,13 @@ namespace PopPeekPush
         private System.Windows.Forms.Button popButton;
         private System.Windows.Forms.Button peekButton;
         private System.Windows.Forms.Button pushButton;
-        private System.Windows.Forms.NumericUpDown pushNum;
+        private System.Windows.Forms.NumericUpDown numInput;
         private System.Windows.Forms.Button exportButton;
         private System.Windows.Forms.Button factorButton;
+        private System.Windows.Forms.Button randomButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

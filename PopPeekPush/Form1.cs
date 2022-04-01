@@ -14,7 +14,7 @@ namespace PopPeekPush
     public partial class Form1 : Form
     {
         public int[] intArray = new int[10];
-        public int a, i, pointer, rnd, factors;
+        public int a, i, pointer, rnd, factors, random;
         public string arrayLabelString, arrayString, outputString, path, factorString;
         public string pathDocArrayFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "arrayfolder");
 
@@ -48,6 +48,16 @@ namespace PopPeekPush
         private void factorButton_Click(object sender, EventArgs e)
         {
             FACTORCHECK();
+        }
+
+        private void randomButton_Click(object sender, EventArgs e)
+        {
+            RAND();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void arrayLabel_Click(object sender, EventArgs e)
@@ -127,7 +137,7 @@ namespace PopPeekPush
         {
             if (pointer < 9)
             {
-                int num = Convert.ToInt32(pushNum.Value);
+                int num = Convert.ToInt32(numInput.Value);
                 pointer++;
                 intArray[pointer] = num;
                 ArrayLabelUpdate();
@@ -159,14 +169,14 @@ namespace PopPeekPush
         private void FACTORCHECK()
         {
             int[] factorListArray = new int[10];
-            for(i = 0; i<factorListArray.Length; i++)   //reset array
+            for(i = 0; i<factorListArray.Length; i++)    //reset array
             {
                 factorListArray[i] = 0;
             }
 
             factorString = "";
             factors = 0;    //reset factor count
-            a = 0;  //reset factor list array count
+            a = 0;    //reset factor list array count
 
             for (i = 0; i < intArray.Length; i++)
             {
@@ -174,7 +184,7 @@ namespace PopPeekPush
                 {
 
                 }
-                else if (pushNum.Value % intArray[i] == 0)
+                else if (numInput.Value % intArray[i] == 0)
                 {
                     factorListArray[a] += intArray[i];
                     factors++;
@@ -194,6 +204,24 @@ namespace PopPeekPush
             CreateFolderAndPath();
             File.WriteAllText(path, factorString);
             MessageBox.Show("Exported to " + path);
+        }
+
+        private void RAND()
+        {
+            for (i = 0; i < intArray.Length; i++)    //reset array
+            {
+                intArray[i] = 0;
+            }
+
+            var rand = new Random();
+
+            for(i=0; i< intArray.Length; i++)
+            {
+                random = rand.Next(1, Convert.ToInt32(Math.Pow(10, Convert.ToInt32(numInput.Value))));
+                intArray[i] = random;
+            }
+            ArrayLabelUpdate();
+            MessageBox.Show("Array randomised, new " + Convert.ToString(arrayLabel.Text));
         }
 
         private void CreateFolderAndPath()
